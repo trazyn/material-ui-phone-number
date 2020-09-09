@@ -33,11 +33,12 @@ class Item extends React.PureComponent {
           data-country-code={iso2}
           {...restProps}
         >
-          <div className={`flag ${iso2} margin`} />
-
-          <span className="country-name">
-            {localization || name}
-          </span>
+          <div>
+            <div className={`flag ${iso2} margin`} />
+            <span className="country-name">
+              {localization || name}
+            </span>
+          </div>
 
           <span className="dial-code">{`+${dialCode}`}</span>
         </MenuItem>
